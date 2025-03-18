@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>Pasteles Artesanales</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="style4.css" rel="stylesheet">
+</head>
+
+<div class="wrapper">
+
+	<header class="header">
+	<div align="center"><br><img src="logo.png"></div>
+	</header><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="content">
+						<h1><br><br><u>GALERÍA</u></h1><br><br>
+						
+<style type="text/css">
+* { margin: auto; padding: 0; text-align: center }
+#cabecera { font: bold 1.3em verdana; background-color: #feffe4;  }
+h1 { text-align: center ; padding: 0.5em }
+#menu { float: left; width: 30%; background-color: #FBDCF0; margin:20px}
+#menu img { width: 36%; margin: 5%; cursor: pointer; }
+#principal { float: left; width: 65%; }
+#visor { width: 70%; margin-top: 8%; margin-left:95px; border: 0.5px solid #ccc;}
+#visor img { width: 100% }
+</style>
+<script type="text/javascript">
+window.onload = function() { //tras cargar la página ...
+visor1=document.getElementById("visor"); //referencia al visor
+mititulo=document.getElementById("titulo"); //referencia al pie de foto
+}
+function mifoto(num) { //cambiar la imagen
+         f="foto"+num+".jpg"; //ruta de la nueva imagen
+         document.images["fotoVisor"].src=f; //cambiar imagen
+         t=document.images["fotos"+num].alt; //texto de pie de foto
+         mititulo.innerHTML=t; //cambiar pie de foto
+         }
+</script>
+</head>
+<body>
+<div id="cabecera">
+</div>
+<div id="menu">
+<img src='foto1.jpg' alt='Tarta de chocolate.' name='fotos1' onclick="mifoto(1)"/>
+<img src='foto2.jpg' alt='Tarta de zanahoria.' name='fotos2' onclick="mifoto(2)"/>
+<img src='foto3.jpg' alt='Tarta de leches.' name='fotos3' onclick="mifoto(3)"/>
+<img src='foto4.jpg' alt='Tarta de plátano.' name='fotos4' onclick="mifoto(4)"/>
+<img src='foto5.jpg' alt='Tarta de manzana.' name='fotos5' onclick="mifoto(5)"/>
+<img src='foto6.jpg' alt='Tarta de nutella.' name='fotos6' onclick="mifoto(6)"/>
+<img src='foto7.jpg' alt='Tarta de lima.' name='fotos7' onclick="mifoto(7)"/>
+<img src='foto8.jpg' alt='Tarta de oreo.' name='fotos8' onclick="mifoto(8)"/>
+</div>
+<div id="principal">
+<div id="visor">
+   <img src='foto1.jpg' alt='Tarta de chocolate.' name='fotoVisor'/>
+   <div id="titulo" style="font-size:18px">Tarta de chocolate.</div>
+   </div>
+</div>						
+	<img src="tartaq.png" style="width:65px;heigh:65px;margin-top:100px;margin-right:420px;">
+	<h3 style="center"> Desde 1999 </h3>					
+						
+
+        </main><!-- .content -->
+		</div><!-- .container-->
+
+		<aside class="left-sidebar">
+		<style>
+      h1 {
+       
+        text-align:center;
+      }
+    </style>
+		
+	<h1 style="text-align:center;"><br><br><div align="center"><br><img src="orig.png" style="width:100px;heigh:100px;"></div><br><br><a href="Inicio.html">Inicio</a><br><br><br><a href="Quienes somos.html">¿Quiénes somos?</a><br><br><br><a href="Productos y pedidos.html">Productos y pedidos</a><br><br><br><a href="Galeria.html">Galería</a><br><br><br><a href="Locales.html">Locales</a><br><br><br><a href="Contacto.html">Contacto</a><br><br><br><a href="Mi cuenta.html">Mi cuenta</h1><br><br><br>
+    </aside><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+
+</div><!-- .wrapper -->
+
+</body>
+</html>

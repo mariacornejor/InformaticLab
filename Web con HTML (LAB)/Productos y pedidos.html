@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>Pasteles Artesanales</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="style3.css" rel="stylesheet">
+</head>
+
+<div class="wrapper">
+
+	<header class="header">
+	<div align="center"><br><img src="logo.png"></div>
+	</header><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="content">
+						<h1><br><br><u>PRODUCTOS Y PEDIDOS</u></h1><br><br>
+						<body>
+						<style>
+						table {
+						  width: 98%;
+						  border-collapse: collapse;
+						  border: 1px white;
+						  text-align: center;
+						  background-color: #F4E6F9;
+						  font-family: Garamond;
+						  font-size: 18px;
+
+						}
+						</style>
+
+						<h2 style="text-align:left" > Productos y precios</h2><br>
+						<a style="font-size:17px"> A continuación mostramos una lista de los productos que ofrecemos, todos elaborados con cariño y productos 100% naturales.</a> 
+						<br> <br>
+						<div id="muestra"> 
+                        <table id="muestra" class="tabla">
+						<table>
+						  <tr>
+							<th style="font-size:18px"> Torta</th>
+							<th style="font-size:18px"> Precio individual (1 porción)</th>
+							<th style="font-size:18px"> Precio molde completo (10-12 porciones)</th>
+						  </tr>
+						  <tr>
+							<td>Torta de chocolate</td>
+							<td>3€</td>
+							<td>30€</td>
+						  </tr>
+						  <tr>
+							<td>Torta de vainilla</td>
+							<td>3€</td>
+							<td>30€</td>
+						  </tr>
+						   <tr>
+							<td>Torta de naranja</td>
+							<td>4€</td>
+							<td>35€</td>
+						  </tr>
+						  <tr>
+							<td>Torta de limón</td>
+							<td>5€</td>
+							<td>45€</td>
+						  </tr>
+						  <tr>
+							<td>Torta de zanahoria</td>
+							<td>5€</td>
+							<td>45€</td>
+						  </tr>
+						  <tr>
+							<td>Torta de banana</td>
+							<td>5€</td>
+							<td>45€</td>
+						  </tr>
+						  <tr>
+							<td>Torta de tres leches</td>
+							<td>8€</td>
+							<td>60€</td>
+						  </tr>
+						  <tr>
+							<td>Torta de durazno y nueces</td>
+							<td>10€</td>
+							<td>80€</td>
+						  </tr>
+						  <tr>
+							<td>Torta tres leches de lúcuma</td>
+							<td>11€</td>
+							<td>80€</td>
+						  </tr>
+						  </table>
+						  
+						  <br>
+						  
+						  <table>
+						  <tr>
+							<th style="font-size:18px"> Tarta</th>
+							<th style="font-size:18px"> Precio individual (1 porción)</th>
+							<th style="font-size:18px"> Precio molde completo (10-12 porciones)</th>
+						  </tr>
+							<tr>
+							<td>Tarta de manzana</td>
+							<td>3€</td>
+							<td>26€</td>
+						  </tr>
+						  <tr>
+							<td>Tarta de queso sin horno</td>
+							<td>3€</td>
+							<td>26€</td>
+						  </tr>
+						  <tr>
+							<td>Tarta de oreo</td>
+							<td>4€</td>
+							<td>35€</td>
+						  </tr>
+						  <tr>
+							<td>Tarta de mango</td>
+							<td>4€</td>
+							<td>35€</td>
+						  </tr>
+						  <tr>
+							<td>Tarta de fresas y almendras</td>
+							<td>5€</td>
+							<td>50€</td>
+						  </tr>
+						  <tr>
+							<td>Tarta de lima y queso crema</td>
+							<td>6€</td>
+							<td>45€</td>
+						  </tr>
+						  <tr>
+							<td>Tarta de nutella</td>
+							<td>6€</td>
+							<td>45€</td>
+						  </tr>
+						  <tr>
+							<td>Tarta de pera</td>
+							<td>6€</td>
+							<td>40€</td>
+						  </tr>
+						</table>
+						<br>
+						</table></div>
+						<i style="font-size:16px"> **En caso de no encontrar un producto en específico no dude en contactarnos para consultar.</i><br><br>
+						<a style="font-size:17px"> Imprima nuestra lista de productos y precios: </a> <br><br>
+						<button type="button" onclick="javascript:imprim2();" style="font-size:15px">Imprimir</button>
+
+						<!--JAVASCRIPT!-->
+						<script>
+						function imprim2(){
+							var mywindow = window.open('', 'PRINT', 'height=400,width=600');
+							mywindow.document.write('<html><head>');
+							mywindow.document.write('<style>.tabla{width:100%;border-collapse:collapse;margin:16px 0 16px 0;}.tabla th{border:1px solid #ddd;padding:4px;background-color:#d4eefd;text-align:left;font-size:15px;}.tabla td{border:1px solid #ddd;text-align:left;padding:6px;}</style>');
+							mywindow.document.write('</head><body >');
+							mywindow.document.write(document.getElementById('muestra').innerHTML);
+							mywindow.document.write('</body></html>');
+							mywindow.document.close(); // necesario para IE >= 10
+							mywindow.focus(); // necesario para IE >= 10
+							mywindow.print();
+							mywindow.close();
+							return true;}
+						</script>  
+						<br><br>
+						
+						
+						<br><br>
+						
+						<h2 style="text-align:left" > Pedidos</h2><br>
+						<a style="font-size:17px"> Seleccione la torta y la porción que desea comprar:</a><br>
+						
+						<style> 
+						select {
+						  width: 98%;
+						  padding: 16px 20px;
+						  border: none;
+						  border-radius: 4px;
+						  background-color: #FFF0F0;
+						}
+						</style>
+						</head>
+						<body>
+
+						<form action="Gracias.html">
+						
+						  <select id="Productos" name="Torta">
+						  <option value="ninguno">Seleccione un producto</option>
+						  <option value="tc">Torta de chocolate</option>
+						  <option value="tv">Torta de vainilla</option>
+						  <option value="tn">Torta de naranja</option>
+						  <option value="tl">Torta de limón</option>
+						  <option value="tz">Torta de zanahoria</option>
+						  <option value="tb">Torta de banana</option>
+						  <option value="ttl">Torta de tres leches</option>
+						  <option value="tdn">Torta de durazno y nueces	</option>
+						  <option value="ttll">Torta tres leches de lúcuma</option>
+						  </select>
+						
+
+						<br>
+						
+						
+						  <select id="Porcion" name="Porción">
+						  <option value="ninguno">Seleccione la porción</option>
+						  <option value="uno">Porción individual</option>
+						  <option value="diez">Porción molde completo</option>
+
+						  </select>
+						
+						
+						<br><br>
+						
+						<a style="font-size:17px"> Seleccione la tarta y la porción que desea comprar:</a><br>
+						  <select id="Productos" name="Tarta">
+						   <option value="ninguno">Seleccione un producto</option>
+						  <option value="tam">Tarta de manzana</option>
+						  <option value="taq">Tarta de queso sin horno</option>
+						  <option value="tao">Tarta de oreo</option>
+						  <option value="tam">Tarta de mango</option>
+						  <option value="taf">Tarta de fresas y almendras</option>
+						  <option value="tal">Tarta de lima y queso crema	</option>
+						  <option value="tal">Tarta de nutella</option>
+						  <option value="tap">Tarta de pera</option>
+						  </select>
+						
+
+						<br><br>
+		
+						<form action="Productos y pedidos.html">
+						  <select id="Porcion" name="Porción">
+						  <option value="ninguno">Seleccione la porción</option>
+						  <option value="uno">Porción individual</option>
+						  <option value="diez">Porción molde completo</option>
+						  </select>
+						
+						<br><br><br>
+						
+						<style>
+							
+							input[type=text], select {
+							  width: 98%;
+							  padding: 12px 20px;
+							  margin: 8px 0;
+							  display: inline-block;
+							  border: 1px solid #ccc;
+							  border-radius: 4px;
+							  box-sizing: border-box;
+							  align: right;
+							  background-color: #FFF0F0;
+							}
+
+
+							div {
+							  width: 98%;
+							  border-radius: 5px;
+							  background-color:;
+							  padding: 0px;
+							}
+							</style>
+							<body>
+
+							<div>
+							  
+								<label for="fname" style="font-size:17px">Nombre y Apellido:</label>
+								<input type="text" id="fname" name="nombre" placeholder="Ingrese su nombre y apellido"><br>
+								<br>
+								<label for="lmail" style="font-size:17px">Número de contacto:</label>
+								<input type="text" id="lmail" name="email" placeholder="Ingrese su número de contacto"><br>
+																
+						<br>
+						<input type="submit" style="font-size:15px">
+					</form>
+						<br><div align="center"><br><img src="tartaq.png" style="width:65px;heigh:65px;"></div>
+						<h3 align="center"> Desde 1999 </h3>
+						
+
+        </main><!-- .content -->
+		</div><!-- .container-->
+
+		<aside class="left-sidebar">
+		<style>
+      h1 {
+       
+        text-align:center;
+      }
+    </style>
+		
+	<h1 style="text-align:center;"><br><br><div align="center"><br><img src="orig.png" style="width:100px;heigh:100px;"></div><br><br><a href="Inicio.html">Inicio</a><br><br><br><a href="Quienes somos.html">¿Quiénes somos?</a><br><br><br><a href="Productos y pedidos.html">Productos y pedidos</a><br><br><br><a href="Galeria.html">Galería</a><br><br><br><a href="Locales.html">Locales</a><br><br><br><a href="Contacto.html">Contacto</a><br><br><br><a href="Mi cuenta.html">Mi cuenta</h1><br><br><br>
+    </aside><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+
+</div><!-- .wrapper -->
+
+</body>
+</html>
